@@ -1,0 +1,143 @@
+body,
+html {
+  padding: 0;
+  margin: 0;
+  font-family: "Lucida Sans", sans-serif;
+}
+
+/* HEAD */
+
+.header {
+  background: purple;
+  background: linear-gradient(90deg, #06165f 0%, #3c00bc 100%);
+  width: 100%;
+}
+
+.header__inner {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 20px 20px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+@media screen and (min-width: 359px) {
+  .header__inner {
+    justify-content: space-between;
+    padding: 0px 20px;
+  }
+}
+
+.header__logo {
+  color: white;
+  margin-top: 0;
+}
+
+@media screen and (min-width: 359px) {
+  .header__logo {
+    margin-top: 20px;
+  }
+}
+
+.header__btnGrp {
+}
+
+.header___button {
+  padding: 5px 10px;
+  border-radius: 20px;
+  border: 0;
+}
+
+.header___button:hover {
+  cursor: pointer;
+  opacity: 0.75;
+}
+
+.header__btnGrp--submit {
+  background: orange;
+}
+
+.header__btnGrp--signIn {
+  background: green;
+  color: white;
+}
+
+/* GENERAL */
+
+.main {
+  margin: auto;
+}
+
+/* SEARCH */
+
+.search {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 100px 30px;
+  background-color: #e8eaf6;
+}
+
+.search__input {
+  padding: 8px 30px 8px 8px;
+  border-radius: 20px;
+  border: 1px solid lightgray;
+  min-width: 300px;
+}
+
+.search__searchIcon {
+  position: relative;
+  right: 30px;
+}
+
+.search__title {
+  margin-bottom: 10px;
+}
+
+/* FAQ */
+
+.faq {
+  display: flex;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.faq__list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  list-style-type: none;
+  padding: 0;
+}
+
+.faq__list-item {
+  min-height: 8rem;
+  width: 300px;
+  gap: 2rem;
+  padding: 20px;
+  border-radius: 5px;
+  border: 1px solid #daddda;
+}
+
+/* FOOTER */
+
+.footer {
+  padding: 20px;
+  background: linear-gradient(90deg, #182848 0%, #3c00bc 100%);
+}
+
+.footer__content {
+  display: flex;
+  max-width: 1200px;
+  width: 100%;
+  justify-content: space-between;
+  color: white;
+}
+
+.footer__copyright {
+  color: white;
+}
