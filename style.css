@@ -21,27 +21,32 @@ html {
   padding: 20px 20px;
   max-width: 1200px;
   margin: auto;
+  gap: 1rem;
 }
 
-@media screen and (min-width: 359px) {
+@media screen and (min-width: 401px) {
   .header__inner {
-    justify-content: space-between;
+    /* justify-content: space-between; */
     padding: 0px 20px;
   }
 }
 
 .header__logo {
   color: white;
-  margin-top: 0;
 }
 
-@media screen and (min-width: 359px) {
+@media screen and (min-width: 401px) {
   .header__logo {
     margin-top: 20px;
   }
 }
 
 .header__btnGrp {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    gap: 1rem;
 }
 
 .header___button {
@@ -85,16 +90,22 @@ html {
   padding: 8px 30px 8px 8px;
   border-radius: 20px;
   border: 1px solid lightgray;
-  min-width: 300px;
+  width: 100%;
+}
+
+.search__wrapper {
+position: relative;
 }
 
 .search__searchIcon {
-  position: relative;
-  right: 30px;
+    top: 5px;
+  position: absolute;
+  right: 10px;
 }
 
 .search__title {
   margin-bottom: 10px;
+  text-align: center;
 }
 
 /* FAQ */
@@ -111,12 +122,13 @@ html {
   gap: 20px;
   justify-content: center;
   list-style-type: none;
-  padding: 0;
+  padding: 20px;
 }
 
 .faq__list-item {
   min-height: 8rem;
-  width: 300px;
+  width: 100%;
+  max-width: 300px;
   gap: 2rem;
   padding: 20px;
   border-radius: 5px;
@@ -130,9 +142,15 @@ html {
   background: linear-gradient(90deg, #182848 0%, #3c00bc 100%);
 }
 
+.footer__column {
+    flex-grow: 1;
+}
+
 .footer__content {
   display: flex;
+  flex-wrap: wrap;
   max-width: 1200px;
+  gap: 2rem;
   width: 100%;
   justify-content: space-between;
   color: white;
